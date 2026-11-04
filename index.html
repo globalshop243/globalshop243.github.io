@@ -1,0 +1,984 @@
+<!doctype html>
+<html lang="fr" data-theme="dark"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Global Shop | Électronique, Arduino, outillage et importation</title>
+<meta name="description" content="Global Shop vend et importe des kits Arduino, de l'outillage de technicien et des équipements de sécurité. Dépannage électronique, systèmes embarqués et formations. Commandez en ligne.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="data:image/png;base64,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">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Global Shop"><meta property="og:title" content="Global Shop | Électronique, Arduino, outillage et importation"><meta property="og:description" content="Kits Arduino, outillage, équipements de sécurité, dépannage électronique et formations. Commandez en ligne.">
+<meta name="robots" content="index,follow">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Store","name":"Global Shop","description":"Vente et importation de kits Arduino, outillage de technicien et équipements de sécurité. Dépannage électronique et formations.","knowsAbout":["Arduino","Électronique","Outillage","Systèmes embarqués"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"><style>/* Layout: one long page. Hero with live circuit canvas, a conveyor of code cards, services, shop with struck-through prices, pre-order form, owner-managed publications, three contact buttons. */
+:root{
+  --bg:#000000; --surface:#0A0A0A; --ink:#F5F5F5; --muted:#A3A3A3; --line:#262626;
+  --accent:#6C95FF; --accent-ink:#000000; --promo:#FF7F6B; --soft:#0F1526;
+  --trace:#3A1414; --pulse:#FF3B3B; --ok:#4CD6A1; color-scheme:dark;
+  --code-bg:#000000; --code-fg:#D7E2F2; --code-line:#2A2A2A; --c-kw:#7FA3FF; --c-fn:#59D0B2; --c-num:#F2B866; --c-cm:#7A8799; --led-on:#FFC53D; --led-off:#3A3A3A;
+  --f-display:'Bricolage Grotesque','Segoe UI',system-ui,sans-serif;
+  --f-body:'IBM Plex Sans','Segoe UI',system-ui,sans-serif;
+  --f-mono:'IBM Plex Mono',ui-monospace,Consolas,monospace;
+}
+:root[data-theme="light"]{
+  --bg:#F2F5F8; --surface:#FFFFFF; --ink:#0D1B2A; --muted:#51606F; --line:#D6DDE5;
+  --accent:#1747E0; --accent-ink:#FFFFFF; --promo:#C8321E; --soft:#E6ECFB;
+  --trace:#E8B9B2; --pulse:#C8321E; --ok:#12805C; color-scheme:light;
+  --code-bg:#0C1626; --code-line:#26405F; --c-cm:#6F86A3; --led-off:#3A4A60}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--f-body);margin:0}
+h1,h2,h3{font-family:var(--f-display);margin:0;line-height:1.08;text-wrap:balance;letter-spacing:-.02em}
+p{margin:0}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+.wrap{width:100%;max-width:1120px;margin-inline:auto;padding-inline:20px}
+.label{font:500 12px/1 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:12px;height:60px}
+.brand{font:800 20px/1 var(--f-display);text-decoration:none;display:flex;align-items:center;gap:9px;letter-spacing:-.02em;white-space:nowrap}
+.brand svg{width:26px;height:26px;color:var(--accent)}
+.top nav{margin-left:auto;display:flex;gap:2px}
+.top nav a{text-decoration:none;font-size:14px;font-weight:500;padding:8px 11px;border-radius:8px;color:var(--muted)}
+.top nav a:hover{color:var(--ink);background:var(--soft)}
+.icon-btn{border:1px solid var(--line);background:var(--surface);height:40px;min-width:40px;border-radius:10px;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding-inline:10px;font-size:14px;font-weight:600}
+.icon-btn:hover{border-color:var(--accent)}
+.icon-btn svg{width:18px;height:18px}
+.cart-count{background:var(--accent);color:var(--accent-ink);border-radius:99px;min-width:20px;height:20px;font:600 12px/20px var(--f-mono);text-align:center;padding-inline:5px}
+@media(max-width:900px){.top nav{display:none}.top .icon-btn:first-of-type{margin-left:auto}}
+
+/* hero */
+.hero{position:relative;overflow:hidden}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 55%);mask-image:linear-gradient(90deg,transparent 0%,#000 55%)}
+@media(max-width:760px){.hero canvas{-webkit-mask-image:linear-gradient(180deg,transparent 30%,#000 100%);mask-image:linear-gradient(180deg,transparent 30%,#000 100%)}}
+.hero .wrap{position:relative;padding-block:72px 64px;display:grid;gap:26px}
+.hero h1{font-size:clamp(36px,6.6vw,70px);font-weight:800;max-width:16ch}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p.lead{font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:56ch}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font-weight:600;font-size:15px;padding:13px 22px;border-radius:10px;border:1px solid var(--line);background:var(--surface);transition:transform .2s,box-shadow .2s,border-color .2s}
+.btn:hover{transform:translateY(-2px);border-color:var(--accent)}
+.btn.main{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.main:hover{box-shadow:0 8px 24px -8px var(--accent)}
+.btn[aria-disabled="true"]{opacity:.45;pointer-events:none}
+.hero-meta{display:flex;flex-wrap:wrap;gap:8px 20px;font:400 13px/1.4 var(--f-mono);color:var(--muted)}
+.hero-meta span::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--promo);margin-right:8px;animation:blink 2.4s infinite}
+@keyframes blink{50%{opacity:.25}}
+
+/* code chain */
+.chain{background:var(--code-bg);overflow:hidden;padding-block:34px;border-block:1px solid var(--code-line)}
+.chain-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:22px;font:500 12px/1.4 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--c-cm)}
+.chain-head b{color:var(--c-fn);font-weight:500}
+.chain-viewport{overflow:hidden}
+.chain-track{display:flex;width:max-content;animation:chain 55s linear infinite}
+.chain:hover .chain-track{animation-play-state:paused}
+@keyframes chain{to{transform:translateX(-50%)}}
+.snip{position:relative;isolation:isolate;flex:none;width:272px;margin-right:52px;border:1px solid var(--code-line);border-radius:12px;background:var(--code-bg);color:var(--code-fg);font:400 13px/1.7 var(--f-mono);overflow:visible}
+.snip::after{content:"";position:absolute;z-index:-1;left:calc(100% - 8px);top:50%;width:68px;height:18px;margin-top:-9px;border:2px solid var(--code-line);border-radius:99px;background:transparent}
+.snip-bar{display:flex;align-items:center;justify-content:space-between;padding:9px 14px;border-bottom:1px solid var(--code-line);color:var(--c-cm);font-size:12px}
+.led{width:11px;height:11px;border-radius:50%;background:var(--led-off);transition:background .15s,box-shadow .15s}
+.led.on{background:var(--led-on);box-shadow:0 0 12px var(--led-on)}
+.snip pre{margin:0;padding:10px 0 12px;font:inherit;white-space:pre}
+.snip .ln{display:block;padding:0 14px;border-left:2px solid transparent}
+.snip .ln.act{background:rgba(255,59,59,.14);border-left-color:var(--promo)}
+.snip .ln.act::after{content:"";display:inline-block;width:7px;height:14px;margin-left:4px;vertical-align:-2px;background:var(--code-fg);animation:caret 1s steps(1) infinite}
+@keyframes caret{50%{opacity:0}}
+.k{color:var(--c-kw)}.f{color:var(--c-fn)}.n{color:var(--c-num)}.c{color:var(--c-cm)}
+
+/* sections */
+section{padding-block:80px}
+.head{display:grid;gap:14px;margin-bottom:40px;max-width:62ch}
+.head h2{font-size:clamp(30px,4.6vw,48px);font-weight:800}
+.head p{color:var(--muted)}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.svc{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:26px;display:grid;gap:14px;align-content:start;transition:transform .25s,border-color .25s}
+.svc:hover{transform:translateY(-4px);border-color:var(--accent)}
+.svc .ic{width:46px;height:46px;border-radius:10px;background:var(--soft);color:var(--accent);display:grid;place-items:center}
+.svc .ic svg{width:24px;height:24px}
+.svc h3{font-size:21px;font-weight:700}
+.svc p{color:var(--muted);font-size:15px}
+.svc ul{margin:0;padding:0;list-style:none;display:grid;gap:6px;font-size:14px}
+.svc li::before{content:"→";color:var(--accent);margin-right:8px;font-family:var(--f-mono)}
+
+/* shop */
+.shop{background:var(--surface);border-block:1px solid var(--line)}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin-bottom:24px;scrollbar-width:thin}
+.tab{flex:none;border:1px solid var(--line);background:var(--bg);padding:9px 16px;border-radius:99px;font-size:14px;font-weight:500;color:var(--muted)}
+.tab[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.products{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:12px;position:relative;transition:transform .25s,border-color .25s;animation:rise .5s both}
+.card:hover{transform:translateY(-4px);border-color:var(--accent)}
+@keyframes rise{from{transform:translateY(14px)}}
+.thumb{height:110px;border-radius:10px;background:var(--soft);color:var(--accent);display:grid;place-items:center;position:relative;overflow:hidden}
+.thumb svg{width:54px;height:54px;position:relative;z-index:1}
+.thumb::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 23px,color-mix(in srgb,var(--accent) 12%,transparent) 23px 24px),repeating-linear-gradient(0deg,transparent 0 23px,color-mix(in srgb,var(--accent) 12%,transparent) 23px 24px)}
+.badge{position:absolute;top:12px;right:12px;z-index:2;background:var(--promo);color:#fff;font:600 12px/1 var(--f-mono);padding:6px 8px;border-radius:6px}
+.card h3{font-size:18px;font-weight:700;line-height:1.2}
+.card p{font-size:14px;color:var(--muted);flex:1}
+.price{display:flex;align-items:baseline;gap:10px;font-variant-numeric:tabular-nums}
+.price s{color:var(--muted);font-size:15px;text-decoration-thickness:2px;text-decoration-color:var(--promo)}
+.price b{font:800 26px/1 var(--f-display);letter-spacing:-.02em}
+.add{border:1px solid var(--accent);background:transparent;color:var(--accent);font-weight:600;font-size:14px;padding:11px;border-radius:10px;transition:background .2s,color .2s}
+.add:hover,.add.done{background:var(--accent);color:var(--accent-ink)}
+
+/* pre-order */
+.po{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
+@media(max-width:860px){.po{grid-template-columns:minmax(0,1fr)}}
+.form{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px;display:grid;gap:12px}
+.form label{display:grid;gap:6px;font-size:14px;font-weight:500}
+.form input,.form textarea,.checkout input,.checkout textarea,.adm input,.adm textarea{width:100%;font:inherit;font-size:15px;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
+.form textarea,.checkout textarea,.adm textarea{resize:vertical;min-height:84px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:480px){.row2{grid-template-columns:1fr}}
+.steps{display:grid;gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--surface)}
+.step{padding:20px 22px;display:grid;gap:6px;border-bottom:1px solid var(--line)}
+.step:last-child{border-bottom:0}
+.step b{font:600 12px/1 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.step h3{font-size:18px}
+.step p{font-size:14px;color:var(--muted)}
+.toast{font-size:13px;color:var(--muted);min-height:18px}
+
+/* posts */
+.posts{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.post{background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.post img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--soft)}
+.post .ph{aspect-ratio:4/3;background:var(--soft);color:var(--accent);display:grid;place-items:center}
+.post .ph svg{width:48px;height:48px}
+.post .pb{padding:16px;display:grid;gap:10px;flex:1;align-content:start}
+.post .pb p{font-size:15px;white-space:pre-wrap;overflow-wrap:anywhere}
+.post .pm{display:flex;justify-content:space-between;align-items:center;gap:8px;font:400 12px/1.3 var(--f-mono);color:var(--muted)}
+.post .btn,.post .mini{padding:8px 14px;font-size:13px}
+.mini{border:1px solid var(--line);background:var(--bg);border-radius:8px;padding:6px 10px;font-size:12px;font-weight:600}
+.mini.danger{color:var(--promo);border-color:var(--promo)}
+.empty{color:var(--muted);font-size:15px;border:1px dashed var(--line);border-radius:14px;padding:28px;background:var(--surface)}
+
+/* contact */
+.contact{background:var(--ink);color:var(--bg)}
+.contact .label{color:var(--accent)}
+.contact .head p{color:color-mix(in srgb,var(--bg) 70%,transparent)}
+.soc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.soc{display:grid;gap:6px;text-decoration:none;border:1px solid color-mix(in srgb,var(--bg) 25%,transparent);border-radius:14px;padding:24px;transition:transform .2s,background .2s;min-width:0}
+.soc:hover{transform:translateY(-3px);background:color-mix(in srgb,var(--bg) 10%,transparent)}
+.soc svg{width:30px;height:30px;color:var(--accent)}
+.soc strong{font:700 24px/1.2 var(--f-display)}
+.soc small{font-size:14px;opacity:.7;overflow-wrap:anywhere}
+.soc.off{opacity:.5;pointer-events:none}
+.phone-line{margin-top:20px;font:500 14px var(--f-mono);opacity:.8}
+footer{padding-block:28px;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px}
+
+/* drawers and dialogs */
+.veil{position:fixed;inset:0;background:rgba(5,10,18,.55);z-index:40;opacity:0;pointer-events:none;transition:opacity .25s}
+.veil.open{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(440px,100%);background:var(--surface);z-index:41;transform:translateX(100%);transition:transform .3s;display:flex;flex-direction:column;border-left:1px solid var(--line);padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.drawer.open{transform:none}
+.drawer>header{display:flex;align-items:center;justify-content:space-between;padding:18px 20px;border-bottom:1px solid var(--line)}
+.drawer>header h2{font-size:22px}
+.lines{flex:1;overflow:auto;padding:12px 20px;display:grid;align-content:start;gap:4px}
+.line{display:grid;grid-template-columns:1fr auto;gap:4px 12px;padding:12px 0;border-bottom:1px solid var(--line);min-width:0}
+.line b{font-weight:600;font-size:15px;min-width:0}
+.line span{font:500 14px var(--f-mono);font-variant-numeric:tabular-nums}
+.qty{display:flex;align-items:center;gap:8px}
+.qty button{width:30px;height:30px;border-radius:8px;border:1px solid var(--line);background:var(--bg);font-size:16px;line-height:1}
+.qty em{font:500 14px var(--f-mono);min-width:18px;text-align:center;font-style:normal}
+.checkout{padding:16px 20px 20px;border-top:1px solid var(--line);display:grid;gap:10px}
+.total{display:flex;justify-content:space-between;align-items:baseline;font-weight:600}
+.total b{font:800 26px var(--f-display);font-variant-numeric:tabular-nums}
+.checkout .btn{width:100%}
+.adm{overflow:auto;padding:18px 20px;display:grid;gap:26px;align-content:start}
+.adm section{padding:0;display:grid;gap:12px}
+.adm h3{font-size:18px}
+.adm label{display:grid;gap:6px;font-size:14px;font-weight:500}
+.adm small{color:var(--muted);font-weight:400}
+.adm .prev{max-height:160px;border-radius:10px;border:1px solid var(--line);object-fit:cover}
+.msg{font-size:13px;min-height:18px}
+.msg.err{color:var(--promo)}
+.msg.ok{color:var(--ok)}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .chain-viewport{overflow-x:auto}
+}
+a.icon-btn{text-decoration:none;color:var(--ink)}
+
+/* contact: black like the rest, inverted only in the light theme */
+.contact{background:var(--surface);color:var(--ink);border-top:1px solid var(--line)}
+.contact .head p{color:var(--muted)}
+.soc{border-color:var(--line)}
+.soc:hover{background:var(--soft)}
+:root[data-theme="light"] .contact{background:var(--ink);color:var(--bg);border-top:0}
+:root[data-theme="light"] .contact .head p{color:color-mix(in srgb,var(--bg) 70%,transparent)}
+:root[data-theme="light"] .soc{border-color:color-mix(in srgb,var(--bg) 25%,transparent)}
+:root[data-theme="light"] .soc:hover{background:color-mix(in srgb,var(--bg) 10%,transparent)}
+.thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1}
+.thumb.has::after{display:none}
+.badge.pre{background:var(--accent);color:var(--accent-ink)}
+
+[hidden]{display:none!important}
+footer{padding-bottom:96px}
+/* rouge : petites touches */
+.cart-count{background:var(--promo);color:#000}
+.badge.pre{background:var(--promo);color:#000}
+.top nav a:hover{box-shadow:inset 0 -2px 0 var(--promo)}
+.vlink{margin-left:auto;font:600 13px/1 var(--f-mono);color:var(--promo);text-decoration:none}
+.acts2{display:flex;gap:8px;flex-wrap:wrap}
+.pvid{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:#000}
+.float-soc{position:fixed;right:max(14px,env(safe-area-inset-right,0px));bottom:max(14px,env(safe-area-inset-bottom,0px));z-index:35;display:flex;flex-direction:column;gap:10px}
+.float-soc a{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:var(--surface);border:1px solid var(--line);color:var(--accent);box-shadow:0 10px 24px -10px rgba(0,0,0,.8);transition:transform .2s,border-color .2s}
+.float-soc a:hover{transform:translateY(-3px);border-color:var(--promo)}
+.float-soc svg{width:24px;height:24px}
+.adm select{width:100%;font:inherit;font-size:15px;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
+#admPanel{display:grid;gap:26px;align-content:start}
+.hint{font-size:13px;color:var(--muted)}
+.arow{display:grid;grid-template-columns:48px minmax(0,1fr);gap:4px 12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}
+.arow .at{width:48px;height:48px;border-radius:8px;background:var(--soft);color:var(--accent);display:grid;place-items:center;overflow:hidden}
+.arow .at img{width:100%;height:100%;object-fit:cover}.arow .at svg{width:24px;height:24px}
+.arow .an{min-width:0;display:grid}.arow .an b{font-size:15px;overflow-wrap:anywhere}.arow .an span{font:500 13px var(--f-mono);color:var(--muted)}
+.arow .ab{grid-column:1/-1;display:flex;gap:8px}
+.mini{color:var(--ink)}
+.mini.danger{color:var(--promo)}
+/* ===== v7 : noir pur, carrés à bordures lumineuses, barre du bas ===== */
+@property --a{syntax:"<angle>";inherits:false;initial-value:0deg}
+:root,:root[data-theme="dark"]{--bg:#000;--surface:#000;--soft:#0a1124;--line:#1a1d2b;--accent:#5C8BFF;--accent-ink:#fff;--blue:#2F6BFF;--red:#FF2A3A;--promo:#FF3B4B;--pulse:#FF2A3A;--code-bg:#000}
+html,body{background:#000}
+body{padding-bottom:0}
+/* cadre du site : toute la 3D est ici */
+.edge{position:fixed;inset:0;pointer-events:none;z-index:70;box-shadow:inset 3px 3px 0 rgba(140,175,255,.28),inset -3px -3px 0 rgba(255,70,80,.25)}
+.edge::before{content:"";position:absolute;inset:0;padding:3px;background:conic-gradient(from var(--a),var(--blue),#0b0e1c 22%,var(--red) 50%,#0b0e1c 78%,var(--blue));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0);mask-composite:exclude;animation:turn 14s linear infinite}
+.edge::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 30px -4px rgba(47,107,255,.55),inset 0 0 60px -20px rgba(255,42,58,.5);animation:breathe 4.5s ease-in-out infinite alternate}
+@keyframes turn{to{--a:360deg}}
+@keyframes breathe{from{opacity:.55}to{opacity:1}}
+/* en-tête */
+.top{background:#000;border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:10px;height:60px;flex-wrap:nowrap;padding-block:0}
+.top .brand{margin-right:auto}
+.icon-btn{background:#000;border:1px solid #232846;box-shadow:2px 2px 0 #0a1230}
+/* vues */
+.view{display:none}
+.view.on{display:block;animation:enter .35s ease-out}
+@keyframes enter{from{opacity:0;transform:translateY(10px)}}
+main{padding-bottom:104px}
+.pg{display:grid;gap:16px;padding-block:22px;align-content:start}
+.h1{font-size:clamp(30px,6vw,46px);font-weight:800;margin:0}
+.h2{font-size:20px;font-weight:700;margin:10px 0 0}
+.label{color:var(--accent)}
+/* carrés à bordures lumineuses (bleu -> rouge), léger relief sur le bord */
+.sq,.card,.post,.form,.soc,.step{background:linear-gradient(#000,#000) padding-box,linear-gradient(135deg,rgba(47,107,255,.95),#171a28 45%,#171a28 55%,rgba(255,42,58,.9)) border-box;border:1.5px solid transparent;border-radius:14px;box-shadow:2px 2px 0 #0a1230,3px 3px 0 #1a0a12,0 0 20px -9px rgba(47,107,255,.65);color:#fff}
+.sq{padding:16px 18px;display:grid;gap:8px;align-content:start;min-width:0}
+.sq p{margin:0;color:#cfd4e4;font-size:15.5px}
+.sq b{font-size:17px}
+.lead-sq p{font-size:17px;color:#fff}
+.sqgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.blk2{display:flex;gap:14px;align-items:center;text-decoration:none;color:#fff}
+.blk2 .ico{flex:none;width:44px;height:44px;border-radius:10px;display:grid;place-items:center;color:var(--accent);border:1px solid #232846;box-shadow:inset 0 0 12px rgba(47,107,255,.35)}
+.blk2 .tx{display:grid;gap:2px}.blk2 .tx span{color:#aab0c4;font-size:14px}
+.tap:active,.tap:hover{box-shadow:2px 2px 0 #0a1230,3px 3px 0 #1a0a12,0 0 26px -4px rgba(255,42,58,.7)}
+.n{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;font:700 14px var(--f-mono);color:#fff;background:#0d1c46;border:1px solid var(--blue)}
+.cta-sq{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
+.cta-sq p{font-size:17px;font-weight:600;color:#fff;max-width:40ch}
+.app-sq .btn{justify-self:start}
+section{padding-block:28px}
+.shop .head,.head{margin-bottom:18px}
+.head h2{font-size:clamp(26px,5vw,38px)}
+.po{gap:18px}
+.steps{display:grid;gap:12px}
+.step{padding:14px 16px}
+.contact{background:#000;border:0;padding-block:0}
+.contact .head{margin-bottom:14px}
+.soc{padding:18px}
+/* boutons */
+.btn{border-radius:12px;background:#000;border:1.5px solid #2a3150;color:#fff;box-shadow:2px 2px 0 #0a1230;transition:transform .12s}
+.btn:hover{border-color:var(--blue);transform:translateY(-1px)}
+.btn:active{transform:translate(2px,2px);box-shadow:none}
+.btn.main{background:linear-gradient(#4f7fff,#2a4fd0);border-color:#7fa1ff;color:#fff;box-shadow:2px 2px 0 #162a78}
+.tab{background:#000;border-color:#232846}
+.tab[aria-pressed="true"]{background:#0d1c46;border-color:var(--blue);color:#fff;box-shadow:inset 0 -2px 0 var(--red)}
+/* barre du bas, comme l'application */
+.bnav{position:fixed;left:3px;right:3px;bottom:3px;z-index:50;display:flex;background:#000;border-top:1px solid #232846;padding:6px 4px calc(8px + env(safe-area-inset-bottom,0px));max-width:100%}
+.bnav button{flex:1;min-height:56px;border:0;background:none;color:#8a90a8;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font:700 11px var(--f-body);position:relative}
+.bnav button.on{color:#fff}
+.bnav button.on svg{color:var(--accent);filter:drop-shadow(0 0 6px rgba(47,107,255,.9))}
+.bnav button.on::before{content:"";position:absolute;top:-7px;left:25%;right:25%;height:3px;border-radius:3px;background:var(--red);box-shadow:0 0 10px var(--red)}
+.float-soc{bottom:calc(90px + env(safe-area-inset-bottom,0px))}
+footer{padding-bottom:110px;border-top:0}
+@media(prefers-reduced-motion:reduce){.edge::before,.edge::after,.view.on{animation:none!important}}
+.float-soc a{width:42px;height:42px;background:rgba(0,0,0,.85)}.float-soc svg{width:20px;height:20px}.float-soc{gap:8px}
+html{scroll-padding-bottom:100px}
+.bnav{z-index:34}.float-soc{z-index:34}
+
+.adminbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;border-color:var(--red)}
+.pay-sq{gap:6px}.paynum,.paybox strong{font:700 22px var(--f-mono);color:#fff;letter-spacing:.02em}
+.paybox{display:grid;gap:4px;padding:12px 14px;border:1.5px solid var(--blue);border-radius:12px;background:#000}
+.paybox span{color:#aab0c4;font-size:13px}
+#manageTop.on{border-color:var(--red);color:var(--red)}
+.bnav button{font-size:10.5px}
+.posts{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.posts .empty{grid-column:1/-1;color:#aab0c4;margin:0}
+
+</style>
+</head><body>
+<div class="edge" aria-hidden="true"></div>
+<header class="top"><div class="wrap">
+  <a class="brand" href="#accueil" aria-label="Global Shop, accueil"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="16" cy="16" r="12"/><ellipse cx="16" cy="16" rx="5" ry="12"/><path d="M4 16h24M6 10h20M6 22h20"/></svg>Global Shop</a>
+  <a class="icon-btn" id="dlTop" href="GlobalShop-client.apk" download aria-label="Télécharger l'application Android"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 20h14"/></svg></a><button class="icon-btn" id="manageTop" type="button" aria-label="Espace propriétaire"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3M14 9l2 2"/></svg></button><button class="icon-btn" id="cartBtn" aria-label="Ouvrir le panier">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h8.8a1 1 0 0 0 1-.8L20 8H6"/><circle cx="9" cy="20" r="1.3"/><circle cx="17" cy="20" r="1.3"/></svg>
+      <span class="cart-count" id="count">0</span>
+    </button>
+</div></header>
+<main>
+<div class="view" data-view="accueil"><div class="wrap pg">
+  <span class="label">Bienvenue</span>
+  <h1 class="h1">Global Shop</h1>
+  <div class="sq lead-sq"><p>Global Shop est une entreprise technologique qui se focalise dans le commerce de matériel, l'électronique, la programmation et l'électricité.</p></div>
+  <h2 class="h2">Nos services</h2>
+  <div class="sqgrid">
+   <a href="#electronique" data-cat="" class="sq blk2 tap"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-5 4 5 4M16 8l5 4-5 4M14 5l-4 14"/></svg></span><span class="tx"><b>Programmation et systèmes embarqués</b><span>Cartes et projets sur mesure.</span></span></a>
+   <a href="#electronique" data-cat="" class="sq blk2 tap"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg></span><span class="tx"><b>Électronique</b><span>Dépannage et réparation d'appareils.</span></span></a>
+   <a href="#electricite" data-cat="" class="sq blk2 tap"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></span><span class="tx"><b>Électricité</b><span>Installations et dépannages électriques.</span></span></a>
+   <a href="#boutique" data-cat="" class="sq blk2 tap"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h8.8a1 1 0 0 0 1-.8L20 8H6"/><circle cx="9" cy="20" r="1.3"/><circle cx="17" cy="20" r="1.3"/></svg></span><span class="tx"><b>Commerce et précommandes</b><span>Kits, outillage et équipements.</span></span></a>
+   <a href="#precommande" data-cat="" class="sq blk2 tap"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7l9-4 9 4v10l-9 4-9-4z"/><path d="M3 7l9 4 9-4M12 11v10"/></svg></span><span class="tx"><b>Importation depuis la Chine</b><span>Un article introuvable ? Nous le faisons venir.</span></span></a>
+   <a href="#formation" data-cat="" class="sq blk2 tap"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></svg></span><span class="tx"><b>Formations techniques</b><span>Des formations techniques en ligne.</span></span></a>
+  </div>
+  <h2 class="h2">Nos catégories</h2>
+  <div class="sqgrid">
+   <a href="#boutique:Arduino" data-cat="Arduino" class="sq blk2 tap"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 10h4M7 14h2M15 10h2M15 14h2"/></svg></span><span class="tx"><b>Arduino</b></span></a><a href="#boutique:Composants électroniques" data-cat="Composants électroniques" class="sq blk2 tap"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg></span><span class="tx"><b>Composants électroniques</b></span></a><a href="#boutique:Outils professionnels" data-cat="Outils professionnels" class="sq blk2 tap"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></span><span class="tx"><b>Outils professionnels</b></span></a><a href="#boutique:Équipements" data-cat="Équipements" class="sq blk2 tap"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7l9-4 9 4v10l-9 4-9-4z"/><path d="M3 7l9 4 9-4M12 11v10"/></svg></span><span class="tx"><b>Équipements</b></span></a>
+  </div>
+  <h2 class="h2">Comment commander ?</h2>
+  <div class="sqgrid">
+   <div class="sq "><span class="n">1</span><b>Choisissez</b><p>Parcourez les services et les produits.</p></div>
+   <div class="sq "><span class="n">2</span><b>Commandez</b><p>Ajoutez au panier, ou précommandez si le produit n'est pas en stock.</p></div>
+   <div class="sq "><span class="n">3</span><b>Payez</b><p>Payez par Mobile Money au +243 891 167 761, puis envoyez votre commande par WhatsApp.</p></div>
+  </div>
+  <div class="posts" data-blk="accueil"></div>
+  <div class="sq app-sq"><b>Notre application Android</b><p>Téléchargez l'application Global Shop pour commander depuis votre téléphone.</p><a class="btn main" id="dlHero" href="GlobalShop-client.apk" download>Télécharger l'application</a></div>
+</div><section class="contact" id="contact">
+  <div class="wrap">
+    <div class="head">
+      <span class="label">Contact</span>
+      <h2>Contactez-nous là où vous êtes.</h2>
+      <p>Choisissez le réseau que vous utilisez le plus. Nous répondons à tous.</p>
+    </div>
+    <div class="soc-grid">
+      <a class="soc" id="socWa" href="#contact" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1.2-4A8 8 0 1 1 8.4 19z"/><path d="M9 9c0 3 3 6 6 6l1-2-2-1-1 .8c-.8-.4-1.600-1.200-2-2l.8-1-1-2z"/></svg>
+        <strong>WhatsApp</strong><small id="socWaSub"></small>
+      </a>
+      <a class="soc" id="socTt" href="#contact" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+        <strong>TikTok</strong><small id="socTtSub"></small>
+      </a>
+      <a class="soc" id="socFb" href="#contact" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M15.500 8H14a2 2 0 0 0-2 2v11M9.500 13H15"/></svg>
+        <strong>Facebook</strong><small id="socFbSub"></small>
+      </a>
+    </div>
+    <p class="phone-line" id="phoneLine" hidden></p>
+  </div>
+</section>
+</div>
+<div class="view" data-view="boutique"><div class="wrap pg" style="padding-bottom:0"><div class="sq adminbar" hidden><b>Espace propriétaire</b><button class="btn main" type="button" data-pub="product">Publier un produit (photo, vidéo, prix)</button></div><div class="sq pay-sq"><b>Paiement</b><p>Payez par Mobile Money au numéro ci-dessous, puis envoyez la commande par WhatsApp.</p><strong class="paynum">+243 891 167 761</strong><button class="mini" type="button" data-copypay>Copier le numéro</button></div></div><section id="boutique" class="shop">
+  <div class="wrap">
+    <div class="head">
+      <span class="label">Boutique</span>
+      <h2>Commandez en quelques touches.</h2>
+      <p>Les articles sont publiés par Global Shop. Ajoutez-les au panier, puis envoyez votre commande par WhatsApp.</p>
+    </div>
+    <div class="tabs" id="tabs" role="group" aria-label="Catégories"></div>
+    <div class="products" id="products"></div>
+  </div>
+</section>
+
+<section id="precommande" class="shop">
+  <div class="wrap po">
+    <div>
+      <div class="head">
+        <span class="label">Précommande et importation</span>
+        <h2>Ce que vous cherchez n'est pas au catalogue ?</h2>
+        <p>Décrivez l'article, la quantité et vos exigences. Nous répondons avec un prix et un délai.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><b>Étape 1</b><h3>Vous décrivez</h3><p>Nom de l'article, modèle, quantité, tout détail utile.</p></div>
+        <div class="step"><b>Étape 2</b><h3>Nous cherchons</h3><p>Nous vérifions la disponibilité et le prix à l'importation.</p></div>
+        <div class="step"><b>Étape 3</b><h3>Vous confirmez</h3><p>Vous recevez le devis, puis nous passons la commande.</p></div>
+      </div>
+    </div>
+    <form class="form" id="poForm" autocomplete="off">
+      <label for="poItem">Article recherché
+        <input id="poItem" placeholder="Ex. : carte Arduino Mega, perceuse à percussion">
+      </label>
+      <div class="row2">
+        <label for="poQty">Quantité<input id="poQty" inputmode="numeric" placeholder="1"></label>
+        <label for="poName">Votre nom<input id="poName" placeholder="Nom"></label>
+      </div>
+      <label for="poPhone">Votre téléphone<input id="poPhone" inputmode="tel" placeholder="+243 ..."></label>
+      <label for="poNote">Commentaire<textarea id="poNote" placeholder="Marque souhaitée, budget, usage, délai..."></textarea></label>
+      <a class="btn main" id="poSend" href="#precommande" target="_blank" rel="noopener" aria-disabled="true">Envoyer la précommande sur WhatsApp</a>
+      <button class="btn" id="poCopy" type="button">Copier le message</button>
+      <div class="toast" id="poToast" role="status"></div>
+    </form>
+  </div>
+</section>
+
+</div>
+<div class="view" data-view="electronique"><div class="wrap pg">
+  <span class="label">Électronique</span>
+  <h1 class="h1">Électronique et programmation</h1>
+  <div class="sq adminbar" hidden><b>Espace propriétaire</b><button class="btn main" type="button" data-pub="electronique">Publier une photo ou une vidéo</button></div>
+  <div class="sq lead-sq"><p>Nos réalisations en électronique, programmation, Arduino, dépannage et maisons intelligentes.</p></div>
+  <div class="sqgrid">
+   <div class="sq blk2"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg></span><span class="tx"><b>Électronique</b><span>Conception et réparation de cartes et d'appareils.</span></span></div>
+   <div class="sq blk2"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-5 4 5 4M16 8l5 4-5 4M14 5l-4 14"/></svg></span><span class="tx"><b>Programmation</b><span>Systèmes embarqués et projets sur mesure.</span></span></div>
+   <div class="sq blk2"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 10h4M7 14h2M15 10h2M15 14h2"/></svg></span><span class="tx"><b>Arduino</b><span>Montages et projets Arduino.</span></span></div>
+   <div class="sq blk2"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></span><span class="tx"><b>Dépannage</b><span>Diagnostic et réparation avec devis avant travaux.</span></span></div>
+   <div class="sq blk2"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8v9H3z"/><path d="M10 20v-6h4v6"/></svg></span><span class="tx"><b>Maisons intelligentes</b><span>Installations de maisons intelligentes.</span></span></div>
+  </div>
+  <div id="publications"><h2 class="h2">Projets déjà réalisés</h2><div class="posts" id="posts" data-blk="electronique"></div></div>
+  <div class="sq cta-sq"><p>Un projet en tête ? Parlons-en.</p><a class="btn main" href="#contact">Nous contacter</a></div>
+</div></div>
+<div class="view" data-view="electricite"><div class="wrap pg">
+  <span class="label">Électricité</span>
+  <h1 class="h1">Installations électriques</h1>
+  <div class="sq adminbar" hidden><b>Espace propriétaire</b><button class="btn main" type="button" data-pub="electricite">Publier une photo ou une vidéo</button></div>
+  <div class="sq lead-sq"><p>Installations et dépannages électriques, avec le matériel de protection adapté.</p></div>
+  <div class="sqgrid">
+   <div class="sq blk2"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></span><span class="tx"><b>Installation</b><span>Câblage et tableaux électriques.</span></span></div>
+   <div class="sq blk2"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></span><span class="tx"><b>Éclairage et prises</b><span>Pose et remplacement.</span></span></div>
+   <div class="sq blk2"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></span><span class="tx"><b>Mise à la terre</b><span>Protection des personnes et du matériel.</span></span></div>
+   <div class="sq blk2"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></span><span class="tx"><b>Dépannage électrique</b><span>Recherche de panne et remise en service.</span></span></div>
+  </div>
+  <div><h2 class="h2">Réalisations</h2><div class="posts" data-blk="electricite"></div></div>
+  <div class="sq cta-sq"><p>Une installation ou une panne ? Écrivez-nous.</p><a class="btn main" href="#contact">Nous contacter</a></div>
+</div></div>
+<div class="view" data-view="formation"><div class="wrap pg">
+  <span class="label">Formation</span>
+  <h1 class="h1">Formations techniques</h1>
+  <div class="sq adminbar" hidden><b>Espace propriétaire</b><button class="btn main" type="button" data-pub="formation">Publier une photo ou une vidéo</button></div>
+  <div class="sq lead-sq"><p>Des formations techniques en ligne. Apprenez avec du vrai matériel, pas à pas.</p></div>
+  <div class="sqgrid">
+   <div class="sq blk2"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 10h4M7 14h2M15 10h2M15 14h2"/></svg></span><span class="tx"><b>Arduino</b><span>Systèmes embarqués pour débutants et avancés.</span></span></div>
+   <div class="sq blk2"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg></span><span class="tx"><b>Électronique</b><span>Les bases et la pratique des circuits.</span></span></div>
+   <div class="sq blk2"><span class="ico"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-5 4 5 4M16 8l5 4-5 4M14 5l-4 14"/></svg></span><span class="tx"><b>Programmation</b><span>Écrire le code qui pilote vos projets.</span></span></div>
+  </div>
+  <div class="posts" data-blk="formation"></div>
+  <div class="sq cta-sq"><p>Pour connaître les dates et les prix, écrivez-nous.</p><a class="btn main" href="#contact">S'inscrire</a></div>
+</div></div>
+</main>
+<nav class="bnav" aria-label="Blocs du site"><button type="button" data-v="accueil"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg><span>Accueil</span></button><button type="button" data-v="boutique"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h8.8a1 1 0 0 0 1-.8L20 8H6"/><circle cx="9" cy="20" r="1.3"/><circle cx="17" cy="20" r="1.3"/></svg><span>Boutique</span></button><button type="button" data-v="electronique"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg><span>Électronique</span></button><button type="button" data-v="electricite"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg><span>Électricité</span></button><button type="button" data-v="formation"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/></svg><span>Formation</span></button></nav>
+<footer><div class="wrap"><span>© <span id="yr"></span> Global Shop</span><button class="mini" id="manageBtn" type="button">Espace propriétaire</button></div></footer>
+
+<nav class="float-soc" id="floatSoc" aria-label="Nous contacter" hidden>
+  <a id="fsWa" href="#contact" target="_blank" rel="noopener" aria-label="WhatsApp" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1.2-4A8 8 0 1 1 8.4 19z"/><path d="M9 9c0 3 3 6 6 6l1-2-2-1-1 .8c-.8-.4-1.600-1.200-2-2l.8-1-1-2z"/></svg></a>
+  <a id="fsTt" href="#contact" target="_blank" rel="noopener" aria-label="TikTok" hidden><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+  <a id="fsFb" href="#contact" target="_blank" rel="noopener" aria-label="Facebook" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M15.500 8H14a2 2 0 0 0-2 2v11M9.500 13H15"/></svg></a>
+</nav>
+<div class="veil" id="veil"></div>
+
+<aside class="drawer" id="drawer" aria-label="Panier" aria-hidden="true">
+  <header><h2>Votre commande</h2><button class="icon-btn" id="closeCart" aria-label="Fermer le panier">✕</button></header>
+  <div class="lines" id="lines"></div>
+  <div class="checkout">
+    <div class="total"><span>Total</span><b id="total">0 $</b></div>
+    <div class="paybox"><b>Paiement</b><span>Mobile Money au numéro</span><strong>+243 891 167 761</strong><button class="mini" type="button" data-copypay>Copier le numéro</button></div>
+    <input id="fName" placeholder="Votre nom" autocomplete="name">
+    <input id="fPhone" placeholder="Votre téléphone" inputmode="tel" autocomplete="tel">
+    <textarea id="fAddr" placeholder="Adresse de livraison ou précisions"></textarea>
+    <a class="btn main" id="waSend" href="#" target="_blank" rel="noopener" aria-disabled="true">Envoyer sur WhatsApp</a>
+    <button class="btn" id="copyBtn" type="button">Copier la commande</button>
+    <div class="toast" id="toast" role="status"></div>
+  </div>
+</aside>
+
+<aside class="drawer" id="adminDrawer" aria-label="Gérer le site" aria-hidden="true">
+  <header><h2>Gérer le site</h2><button class="icon-btn" id="closeAdmin" aria-label="Fermer">✕</button></header>
+  <div class="adm">
+    <section id="admLogin">
+      <h3>Espace propriétaire</h3>
+      <p class="hint">Connectez-vous avec le compte du propriétaire de Global Shop, le même que dans l'application.</p>
+      <label for="lEmail">E-mail<input id="lEmail" type="email" autocomplete="username" inputmode="email"></label>
+      <label for="lPass">Mot de passe<input id="lPass" type="password" autocomplete="current-password"></label>
+      <button class="btn main" id="loginBtn" type="button">Se connecter</button>
+      <div class="msg" id="lMsg" role="status"></div>
+    </section>
+    <div id="admPanel" hidden>
+    <section>
+      <h3 id="pfTitle">Publier un produit</h3>
+      <label for="pfName">Nom du produit<input id="pfName" maxlength="120"></label>
+      <label for="pfDesc">Description<textarea id="pfDesc" maxlength="600"></textarea></label>
+      <label for="pfPrice">Prix en dollars <small>(laissez vide pour « Sur devis »)</small><input id="pfPrice" inputmode="decimal" placeholder="Ex. : 35"></label>
+      <label for="pfCat">Catégorie<select id="pfCat"><option>Arduino</option><option>Composants électroniques</option><option>Outils professionnels</option><option>Équipements</option></select></label>
+      <label for="pfAvail">Disponibilité<select id="pfAvail"><option value="stock">Disponible</option><option value="pre">En précommande</option></select></label>
+      <label for="pfImg">Photo <small>(réduite automatiquement)</small><input id="pfImg" type="file" accept="image/*"></label>
+      <label for="pfVid">Vidéo <small>(fichier, 50 Mo maximum)</small><input id="pfVid" type="file" accept="video/*"></label>
+      <label for="pfVidLink">ou lien d'une vidéo <small>(TikTok, Facebook, YouTube)</small><input id="pfVidLink" inputmode="url" placeholder="https://..."></label>
+      <p class="hint" id="pfCur"></p>
+      <button class="btn main" id="pfSave" type="button">Publier</button>
+      <button class="btn" id="pfCancel" type="button" hidden>Annuler la modification</button>
+      <div class="msg" id="pfMsg" role="status"></div>
+    </section>
+    <section>
+      <h3>Produits publiés</h3>
+      <div id="alist"></div>
+    </section>
+    <section>
+      <h3 id="pubTitle">Nouvelle publication</h3>
+      <label for="pBlk">Où publier ?<select id="pBlk"><option value="electronique">Bloc Électronique</option><option value="electricite">Bloc Électricité</option><option value="formation">Bloc Formation</option><option value="accueil">Accueil</option></select></label>
+      <label for="pFile">Photo<input id="pFile" type="file" accept="image/*"></label>
+      <label for="pVidFile">Vidéo <small>(fichier, 50 Mo maximum)</small><input id="pVidFile" type="file" accept="video/*"></label>
+      <label for="pLink">ou lien d'une vidéo <small>(TikTok, Facebook, YouTube)</small><input id="pLink" inputmode="url" placeholder="https://..."></label>
+      <label for="pText">Description<textarea id="pText" maxlength="600" placeholder="Ex. : Arrivage de kits Arduino avancés"></textarea></label>
+      <button class="btn main" id="pSave" type="button">Publier</button>
+      <div class="msg" id="pMsg" role="status"></div>
+    </section>
+    <section>
+      <h3>Contacts et réseaux</h3>
+      <label for="sWa">Numéro WhatsApp <small>(avec l'indicatif, ex. 243812345678)</small><input id="sWa" inputmode="tel"></label>
+      <label for="sWaLink">Lien WhatsApp Business <small>(celui du code QR, facultatif si le numéro est rempli)</small><input id="sWaLink" inputmode="url" placeholder="https://wa.me/message/..."></label>
+      <label for="sPhone">Numéro affiché sur le site <small>(facultatif)</small><input id="sPhone" inputmode="tel"></label>
+      <label for="sTt">Lien TikTok<input id="sTt" inputmode="url" placeholder="https://www.tiktok.com/@..."></label>
+      <label for="sFb">Lien Facebook<input id="sFb" inputmode="url" placeholder="https://www.facebook.com/..."></label>
+      <button class="btn main" id="sSave" type="button">Enregistrer</button>
+      <div class="msg" id="sMsg" role="status"></div>
+    </section>
+    <section><button class="btn" id="logoutBtn" type="button">Se déconnecter</button></section>
+    </div>
+  </div>
+</aside>
+
+<script>
+var $=function(s){return document.querySelector(s)};
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}
+
+function urlOK(u){return /^https:\/\/\S+$/.test(u||"")}
+/* contacts (réglés par le propriétaire, lus depuis le serveur) */
+var S={whatsapp:"",walink:"https://wa.me/message/GBM2B4HLWGO5N1",phone:"+243 891 167 761",tiktok:"https://www.tiktok.com/@global.shop617",facebook:"https://www.facebook.com/share/1ZSiYuLAgR/"};
+var IS_ADMIN=false;var PAYNUM="+243 891 167 761";
+function waNum(){return String(S.whatsapp||"").replace(/\D/g,"")}
+function waOK(){return waNum().length>=9||urlOK(S.walink)}
+function waLink(t){return waNum().length>=9?"https://wa.me/"+waNum()+"?text="+encodeURIComponent(t):S.walink}
+function setSoc(id,subId,ok,href,sub){
+  var a=$(id); $(subId).textContent=sub;
+  if(ok){a.href=href;a.classList.remove("off");a.removeAttribute("aria-disabled")}
+  else{a.href="#contact";a.classList.add("off");a.setAttribute("aria-disabled","true")}
+}
+function renderContacts(){
+  setSoc("#socWa","#socWaSub",waOK(),waLink("Bonjour Global Shop, j'aimerais avoir des informations."),waOK()?"Écrivez-nous directement":"Numéro bientôt disponible");
+  setSoc("#socTt","#socTtSub",urlOK(S.tiktok),S.tiktok,urlOK(S.tiktok)?"Suivez-nous et écrivez-nous":"Lien bientôt disponible");
+  setSoc("#socFb","#socFbSub",urlOK(S.facebook),S.facebook,urlOK(S.facebook)?"Notre page et messagerie":"Lien bientôt disponible");
+  var pl=$("#phoneLine"), ph=S.phone||(waNum().length>=9?"+"+waNum():"");
+  if(ph){pl.hidden=false;pl.textContent="Téléphone et paiement : "+ph}else pl.hidden=true;
+  var f=[["#fsWa",waOK(),waLink("Bonjour Global Shop, j'aimerais avoir des informations.")],["#fsTt",urlOK(S.tiktok),S.tiktok],["#fsFb",urlOK(S.facebook),S.facebook]],any=false;
+  f.forEach(function(x){var a=$(x[0]);a.hidden=!x[1];if(x[1]){a.href=x[2];any=true}});
+  $("#floatSoc").hidden=!any;
+  updateCart(); updatePo();
+}
+$("#yr").textContent=new Date().getFullYear();
+(function(){var u="GlobalShop-client.apk";["#dlTop","#dlHero"].forEach(function(s){var a=$(s);if(a)a.href=u})})();
+
+/* serveur Supabase : le même que l'application */
+var SUPA_URL="https://nhralqbfmzcmbyrjlcdd.supabase.co",SUPA_KEY="sb_publishable_KogfpYjiBGkJ10DpVTB5-g_oeZNmc4u";
+var AUTH=null;
+try{AUTH=JSON.parse(localStorage.getItem("gs_site_auth")||"null")}catch(e){AUTH=null}
+function saveAuth(){try{if(AUTH)localStorage.setItem("gs_site_auth",JSON.stringify(AUTH));else localStorage.removeItem("gs_site_auth")}catch(e){}}
+function nowSec(){return Math.floor(Date.now()/1000)}
+function takeSession(d){AUTH={access:d.access_token,refresh:d.refresh_token,exp:nowSec()+(d.expires_in||3600),uid:d.user&&d.user.id,email:d.user&&d.user.email};saveAuth()}
+function refreshAuth(){
+  if(!AUTH||!AUTH.refresh)return Promise.reject(new Error("no session"));
+  return fetch(SUPA_URL+"/auth/v1/token?grant_type=refresh_token",{method:"POST",headers:{apikey:SUPA_KEY,"Content-Type":"application/json"},body:JSON.stringify({refresh_token:AUTH.refresh})})
+  .then(function(r){return r.json().then(function(d){if(!r.ok||!d.access_token)throw new Error("refresh");takeSession(d)})})
+  .catch(function(e){AUTH=null;saveAuth();throw e});
+}
+function api(path,o,retried){
+  o=o||{};
+  var pre=(AUTH&&AUTH.exp-nowSec()<60&&!retried)?refreshAuth().catch(function(){}):Promise.resolve();
+  return pre.then(function(){
+    var h={apikey:SUPA_KEY};
+    if(AUTH&&AUTH.access)h.Authorization="Bearer "+AUTH.access;
+    if(o.json!==undefined)h["Content-Type"]="application/json";
+    if(o.ctype)h["Content-Type"]=o.ctype;
+    if(o.prefer)h.Prefer=o.prefer;
+    return fetch(SUPA_URL+path,{method:o.method||"GET",headers:h,body:o.json!==undefined?JSON.stringify(o.json):o.body}).then(function(r){
+      if(r.status===401&&AUTH&&!retried)return refreshAuth().then(function(){return api(path,o,true)});
+      return r.text().then(function(t){var d=null;try{d=t?JSON.parse(t):null}catch(e){d=t}if(!r.ok)throw {status:r.status,body:d};return d});
+    });
+  });
+}
+function upload(path,blob){var ct=(blob.type||"application/octet-stream").split(";")[0];return api("/storage/v1/object/media/"+path,{method:"POST",body:blob,ctype:ct}).then(function(){return SUPA_URL+"/storage/v1/object/public/media/"+path})}
+
+/* boutique : les produits viennent du serveur, publiés par le propriétaire */
+var PH_ICON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg>';
+var money=function(n){return n+" $"};
+var PRODUCTS=[], cart={}, activeCat="all", loaded=false, loadFailed=false, pendingDel=null;
+function imgOK(u){return /^https:\/\/\S+$/.test(u||"")}
+function catList(){var o=[];PRODUCTS.forEach(function(p){if(p.cat&&o.indexOf(p.cat)<0)o.push(p.cat)});return o}
+function renderTabs(){
+  var cs=catList(),box=$("#tabs");
+  if(cs.length<1){box.innerHTML="";return}
+  box.innerHTML=["Tout"].concat(cs).map(function(c){var v=c==="Tout"?"all":c;return '<button class="tab" data-c="'+esc(v)+'" aria-pressed="'+(v===activeCat)+'">'+esc(c)+'</button>'}).join("");
+}
+function renderProducts(){
+  var box=$("#products");
+  if(!loaded){box.innerHTML='<p class="empty">'+(loadFailed?"Les produits de Global Shop apparaîtront ici dès leur publication.":"Chargement des produits…")+'</p>';return}
+  var list=PRODUCTS.filter(function(p){return activeCat==="all"||p.cat===activeCat});
+  if(!list.length){box.innerHTML='<p class="empty">'+(IS_ADMIN?"Aucun produit pour l'instant. Ouvrez « Gérer le site » pour publier le premier.":"Aucun produit pour l'instant. Les articles publiés par Global Shop apparaîtront ici.")+'</p>';return}
+  box.innerHTML=list.map(function(p,i){
+    var ok=imgOK(p.img);
+    return '<article class="card" style="animation-delay:'+Math.min(i,12)*40+'ms"><div class="thumb'+(ok?" has":"")+'">'+(p.pre?'<span class="badge pre">Précommande</span>':"")+(ok?'<img src="'+esc(p.img)+'" alt="" loading="lazy">':PH_ICON)+'</div>'
+      +'<h3>'+esc(p.name)+'</h3><p>'+esc(p.desc)+'</p>'
+      +'<div class="price"><b>'+(p.price==null?"Sur devis":money(p.price))+'</b>'+(imgOK(p.vid)?'<a class="vlink" href="'+esc(p.vid)+'" target="_blank" rel="noopener">▶ Vidéo</a>':"")+'</div>'
+      +'<button class="add" data-id="'+esc(p.id)+'">Ajouter au panier</button>'
+      +(IS_ADMIN?'<div class="acts2"><button class="mini" type="button" data-edit="'+esc(p.id)+'">Modifier</button><button class="mini danger" type="button" data-del="'+esc(p.id)+'">'+(pendingDel===p.id?"Confirmer la suppression":"Supprimer")+'</button></div>':"")+'</article>';
+  }).join("");
+}
+function loadProducts(){
+  return api("/rest/v1/items?select=id,name,descr,price,avail,cat,img_url,vid_url&col=eq.products&order=created_at.desc&limit=500")
+  .then(function(a){
+    PRODUCTS=a.map(function(r){return {id:String(r.id),cat:r.cat||"",name:r.name||"",desc:r.descr||"",price:r.price==null?null:Number(r.price),avail:r.avail||"stock",pre:r.avail==="pre",img:r.img_url||"",vid:r.vid_url||""}});
+    loaded=true;loadFailed=false;
+    if(activeCat!=="all"&&catList().indexOf(activeCat)<0)activeCat="all";
+    renderTabs();renderProducts();updateCart();if(typeof renderAdminList==="function")renderAdminList();
+  }).catch(function(){if(!loaded){loadFailed=true;renderProducts()}});
+}
+
+$("#tabs").addEventListener("click",function(e){var b=e.target.closest(".tab");if(!b)return;activeCat=b.dataset.c;renderTabs();renderProducts()});
+$("#products").addEventListener("click",function(e){
+  var b=e.target.closest(".add");if(!b)return;
+  cart[b.dataset.id]=(cart[b.dataset.id]||0)+1;
+  b.classList.add("done");b.textContent="Ajouté ✓";
+  setTimeout(function(){b.classList.remove("done");b.textContent="Ajouter au panier"},1100);
+  updateCart();
+});
+
+/* clipboard helper */
+function copyText(txt,toast){
+  function fb(){toast.textContent="Copie impossible ici. Utilisez le bouton WhatsApp."}
+  if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(txt).then(function(){toast.textContent="Message copié."},fb); else fb();
+}
+
+/* cart */
+function cartCount(){return Object.keys(cart).reduce(function(a,k){return a+(cart[k]>0?cart[k]:0)},0)}
+function orderText(){
+  var lines=[],total=0;
+  var devis=false;PRODUCTS.forEach(function(p){var q=cart[p.id];if(!q)return;if(p.price==null){devis=true;lines.push("- "+q+" × "+p.name+" (prix à confirmer)")}else{total+=q*p.price;lines.push("- "+q+" × "+p.name+" ("+money(p.price)+") = "+money(q*p.price))}});
+  var msg="Bonjour Global Shop, je souhaite commander :\n"+lines.join("\n")+"\nTotal : "+money(total)+(devis?" + articles sur devis":"");
+  var n=$("#fName").value.trim(),t=$("#fPhone").value.trim(),a=$("#fAddr").value.trim();
+  if(n)msg+="\nNom : "+n; if(t)msg+="\nTéléphone : "+t; if(a)msg+="\nAdresse : "+a;msg+="\nPaiement : Mobile Money au "+PAYNUM;
+  return msg;
+}
+function updateCart(){
+  var count=0,total=0;
+  var html=Object.keys(cart).filter(function(k){return cart[k]>0}).map(function(id){
+    var p=PRODUCTS.filter(function(x){return x.id===id})[0],q=cart[id];if(!p)return "";count+=q;total+=q*(p.price||0);
+    return '<div class="line"><b>'+p.name+'</b><span>'+(p.price==null?'À confirmer':money(q*p.price))+'</span><div class="qty"><button data-d="-1" data-id="'+id+'" aria-label="Retirer un">−</button><em>'+q+'</em><button data-d="1" data-id="'+id+'" aria-label="Ajouter un">+</button></div><span style="color:var(--muted)">'+(p.price==null?'Sur devis':money(p.price)+' / unité')+'</span></div>';
+  }).join("");
+  $("#lines").innerHTML=html||'<p class="empty">Votre panier est vide. Ajoutez un article depuis la boutique.</p>';
+  $("#count").textContent=count;$("#total").textContent=money(total);
+  var send=$("#waSend");
+  if(count&&waOK()){send.removeAttribute("aria-disabled");send.href=waLink(orderText())}else{send.setAttribute("aria-disabled","true");send.href="#"}
+}
+$("#lines").addEventListener("click",function(e){var b=e.target.closest("button[data-id]");if(!b)return;var id=b.dataset.id;cart[id]=Math.max(0,(cart[id]||0)+Number(b.dataset.d));updateCart()});
+["#fName","#fPhone","#fAddr"].forEach(function(s){$(s).addEventListener("input",updateCart)});
+function openDrawer(id,o){
+  $(id).classList.toggle("open",o);$(id).setAttribute("aria-hidden",String(!o));
+  var anyOpen=$("#drawer").classList.contains("open")||$("#adminDrawer").classList.contains("open");
+  $("#veil").classList.toggle("open",anyOpen);
+}
+function closeAll(){openDrawer("#drawer",false);openDrawer("#adminDrawer",false)}
+$("#cartBtn").addEventListener("click",function(){openDrawer("#drawer",true)});
+$("#closeCart").addEventListener("click",closeAll);
+$("#closeAdmin").addEventListener("click",closeAll);
+$("#veil").addEventListener("click",closeAll);
+document.addEventListener("keydown",function(e){if(e.key==="Escape")closeAll()});
+$("#copyBtn").addEventListener("click",function(){
+  if(!cartCount()){$("#toast").textContent="Ajoutez d'abord un article.";return}
+  copyText(orderText(),$("#toast"));
+});
+if(!waOK()) $("#toast").textContent="";
+
+/* pre-order */
+function poText(){
+  var m="Bonjour Global Shop, je souhaite faire une précommande :\nArticle : "+$("#poItem").value.trim();
+  var q=$("#poQty").value.trim(),n=$("#poName").value.trim(),t=$("#poPhone").value.trim(),c=$("#poNote").value.trim();
+  if(q)m+="\nQuantité : "+q; if(c)m+="\nDétails : "+c; if(n)m+="\nNom : "+n; if(t)m+="\nTéléphone : "+t;
+  return m;
+}
+function updatePo(){
+  var a=$("#poSend"),ok=$("#poItem").value.trim()&&waOK();
+  if(ok){a.removeAttribute("aria-disabled");a.href=waLink(poText())}else{a.setAttribute("aria-disabled","true");a.href="#precommande"}
+}
+["#poItem","#poQty","#poName","#poPhone","#poNote"].forEach(function(s){$(s).addEventListener("input",updatePo)});
+$("#poForm").addEventListener("submit",function(e){e.preventDefault()});
+$("#poCopy").addEventListener("click",function(){
+  if(!$("#poItem").value.trim()){$("#poToast").textContent="Indiquez d'abord l'article recherché.";return}
+  copyText(poText(),$("#poToast"));
+});
+
+/* publications */
+var POSTS=[], pendingPost=null;
+function fmtDate(ts){try{return new Date(ts).toLocaleDateString("fr-FR",{day:"numeric",month:"long",year:"numeric"})}catch(e){return ""}}
+var VIDEO_SVG='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9.500 5 2.500-5 2.500z"/></svg>';
+function isFileVideo(u){return /\/storage\/v1\/object\/public\/media\//.test(u)||/\.(mp4|webm|mov)(\?|$)/i.test(u)}
+function videoLabel(u){return /tiktok\./i.test(u)?"Voir sur TikTok":/facebook\.|fb\.watch/i.test(u)?"Voir sur Facebook":/youtu/i.test(u)?"Voir sur YouTube":"Voir la vidéo"}
+var BLKS=["accueil","electronique","electricite","formation"];
+function postBlk(p){return BLKS.indexOf(p.cat)>=0?p.cat:"electronique"}
+function renderPosts(){
+  [].slice.call(document.querySelectorAll(".posts")).forEach(function(box){
+  var blk=box.getAttribute("data-blk"),list=POSTS.filter(function(p){return postBlk(p)===blk});
+  box.innerHTML="";
+  if(!list.length){
+    var e=document.createElement("p");e.className="empty";
+    e.textContent=IS_ADMIN?"Rien n'est publié ici pour l'instant. Utilisez le bouton « Publier » ci-dessus.":"Les prochaines photos et vidéos apparaîtront ici.";
+    box.appendChild(e);return;
+  }
+  list.forEach(function(p){
+    var c=document.createElement("article");c.className="post";
+    if(imgOK(p.vid)&&isFileVideo(p.vid)){var v=document.createElement("video");v.src=p.vid;v.controls=true;v.preload="metadata";v.playsInline=true;v.className="pvid";c.appendChild(v)}
+    else if(imgOK(p.img)){var im=document.createElement("img");im.src=p.img;im.alt=p.text?p.text.slice(0,80):"Publication Global Shop";im.loading="lazy";c.appendChild(im)}
+    else{var ph=document.createElement("div");ph.className="ph";ph.innerHTML=VIDEO_SVG;c.appendChild(ph)}
+    var b=document.createElement("div");b.className="pb";
+    if(p.text){var t=document.createElement("p");t.textContent=p.text;b.appendChild(t)}
+    if(imgOK(p.vid)&&!isFileVideo(p.vid)){var a=document.createElement("a");a.className="btn";a.href=p.vid;a.target="_blank";a.rel="noopener";a.textContent=videoLabel(p.vid);b.appendChild(a)}
+    var m=document.createElement("div");m.className="pm";var d=document.createElement("span");d.textContent=fmtDate(p.ts);m.appendChild(d);
+    if(IS_ADMIN){var x=document.createElement("button");x.type="button";x.className="mini danger";x.textContent=pendingPost===p.id?"Confirmer la suppression":"Supprimer";x.dataset.id=p.id;m.appendChild(x)}
+    b.appendChild(m);c.appendChild(b);box.appendChild(c);
+  });
+  });
+}
+function loadPosts(){
+  return api("/rest/v1/items?select=id,descr,img_url,vid_url,cat,created_at&col=eq.pub&order=created_at.desc&limit=100").then(function(a){
+    POSTS=a.map(function(r){return {id:String(r.id),text:r.descr||"",img:r.img_url||"",vid:r.vid_url||"",cat:r.cat||"",ts:r.created_at}});renderPosts();
+  }).catch(function(){renderPosts()});
+}
+document.addEventListener("click",function(e){
+  var b=e.target.closest(".posts button[data-id]");if(!b)return;
+  if(pendingPost!==b.dataset.id){pendingPost=b.dataset.id;renderPosts();return}
+  b.disabled=true;b.textContent="Suppression...";
+  api("/rest/v1/items?id=eq."+encodeURIComponent(b.dataset.id),{method:"DELETE"}).then(function(){pendingPost=null;return loadPosts()}).catch(function(){pendingPost=null;renderPosts();say("pMsg","La suppression a échoué. Reconnectez-vous puis réessayez.","err")});
+});
+
+/* contacts et réseaux : enregistrés sur le serveur, lus par tous les visiteurs */
+var CFG_KEYS=["site_whatsapp","site_walink","site_phone","site_tiktok","site_facebook"];
+function loadConfig(){
+  return api("/rest/v1/app_config?select=key,value&key=in.("+CFG_KEYS.join(",")+")").then(function(a){
+    var m={};(a||[]).forEach(function(r){m[r.key]=r.value||""});
+    S.whatsapp=m.site_whatsapp||S.whatsapp;S.walink=m.site_walink||S.walink;S.phone=m.site_phone||S.phone;S.tiktok=m.site_tiktok||S.tiktok;S.facebook=m.site_facebook||S.facebook;
+    renderContacts();
+  }).catch(function(){renderContacts()});
+}
+
+/* gestion du site : réservée au compte propriétaire */
+function say(id,msg,kind){var m=$("#"+id);m.className="msg"+(kind?" "+kind:"");m.textContent=msg||""}
+function openDrawer(id,o){
+  $(id).classList.toggle("open",o);$(id).setAttribute("aria-hidden",String(!o));
+  var anyOpen=$("#drawer").classList.contains("open")||$("#adminDrawer").classList.contains("open");
+  $("#veil").classList.toggle("open",anyOpen);
+}
+function closeAll(){openDrawer("#drawer",false);openDrawer("#adminDrawer",false)}
+function setAdmin(on){
+  IS_ADMIN=!!on;
+  $("#manageBtn").textContent=IS_ADMIN?"Gérer le site":"Espace propriétaire";
+  $("#admLogin").hidden=IS_ADMIN;$("#admPanel").hidden=!IS_ADMIN;
+  renderProducts();renderPosts();renderAdminList();
+}
+function checkAdmin(){
+  if(!AUTH||!AUTH.uid)return Promise.resolve(false);
+  return api("/rest/v1/profiles?select=role&id=eq."+encodeURIComponent(AUTH.uid)).then(function(a){return !!(a&&a[0]&&a[0].role==="admin")}).catch(function(){return false});
+}
+function fillSettingsForm(){$("#sWa").value=S.whatsapp||"";$("#sWaLink").value=S.walink||"";$("#sPhone").value=S.phone||"";$("#sTt").value=S.tiktok||"";$("#sFb").value=S.facebook||""}
+$("#manageBtn").addEventListener("click",function(){fillSettingsForm();openDrawer("#adminDrawer",true)});
+$("#closeAdmin").addEventListener("click",closeAll);
+$("#closeCart").addEventListener("click",closeAll);
+$("#veil").addEventListener("click",closeAll);
+$("#cartBtn").addEventListener("click",function(){openDrawer("#drawer",true)});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")closeAll()});
+
+$("#loginBtn").addEventListener("click",function(){
+  var em=$("#lEmail").value.trim(),pw=$("#lPass").value,btn=this;
+  if(!em||!pw){say("lMsg","Saisissez votre e-mail et votre mot de passe.","err");return}
+  btn.disabled=true;say("lMsg","Connexion…");
+  fetch(SUPA_URL+"/auth/v1/token?grant_type=password",{method:"POST",headers:{apikey:SUPA_KEY,"Content-Type":"application/json"},body:JSON.stringify({email:em,password:pw})})
+  .then(function(r){return r.json().then(function(d){
+    if(!r.ok||!d.access_token){var c=d&&(d.error_code||d.code);throw new Error(c==="email_not_confirmed"?"Confirmez d'abord votre e-mail.":"E-mail ou mot de passe incorrect.")}
+    takeSession(d);return checkAdmin();
+  })}).then(function(ok){
+    if(!ok){AUTH=null;saveAuth();throw new Error("Ce compte n'est pas celui du propriétaire.")}
+    $("#lPass").value="";say("lMsg","");setAdmin(true);
+  }).catch(function(e){say("lMsg",e.message||"Connexion impossible. Vérifiez internet.","err")}).then(function(){btn.disabled=false});
+});
+$("#logoutBtn").addEventListener("click",function(){AUTH=null;saveAuth();setAdmin(false);closeAll()});
+
+/* images et vidéos */
+function readImage(file,max){
+  return new Promise(function(res,rej){
+    var u=URL.createObjectURL(file),im=new Image();
+    im.onload=function(){
+      var r=Math.min(1,max/Math.max(im.width,im.height)),c=document.createElement("canvas");
+      c.width=Math.max(1,Math.round(im.width*r));c.height=Math.max(1,Math.round(im.height*r));
+      c.getContext("2d").drawImage(im,0,0,c.width,c.height);URL.revokeObjectURL(u);
+      c.toBlob(function(b){b?res(b):rej(new Error("image"))},"image/jpeg",.82);
+    };
+    im.onerror=function(){URL.revokeObjectURL(u);rej(new Error("image"))};
+    im.src=u;
+  });
+}
+function rnd(){return Date.now().toString(36)+Math.random().toString(36).slice(2,7)}
+function putImage(file){return readImage(file,1200).then(function(b){return upload("items/"+rnd()+".jpg",b)})}
+function putVideo(file){
+  if(file.size>50*1024*1024)return Promise.reject(new Error("Vidéo trop lourde (50 Mo maximum)."));
+  var ext=(file.name.split(".").pop()||"mp4").toLowerCase().replace(/[^a-z0-9]/g,"").slice(0,4)||"mp4";
+  return upload("items/"+rnd()+"."+ext,file);
+}
+
+/* produits : publier, modifier le prix, supprimer */
+var EDIT=null;
+function resetProductForm(){
+  EDIT=null;["pfName","pfDesc","pfPrice","pfVidLink"].forEach(function(i){$("#"+i).value=""});
+  $("#pfCat").selectedIndex=0;$("#pfAvail").value="stock";$("#pfImg").value="";$("#pfVid").value="";
+  $("#pfTitle").textContent="Publier un produit";$("#pfSave").textContent="Publier";$("#pfCancel").hidden=true;$("#pfCur").textContent="";say("pfMsg","");
+}
+function editProduct(id){
+  var p=PRODUCTS.filter(function(x){return x.id===id})[0];if(!p)return;
+  EDIT=p;$("#pfName").value=p.name;$("#pfDesc").value=p.desc;$("#pfPrice").value=p.price==null?"":p.price;
+  var sel=$("#pfCat"),has=false;for(var i=0;i<sel.options.length;i++)if(sel.options[i].value===p.cat)has=true;
+  if(!has&&p.cat){var o=document.createElement("option");o.value=p.cat;o.textContent=p.cat;sel.appendChild(o)}
+  sel.value=p.cat||sel.options[0].value;$("#pfAvail").value=p.avail==="pre"?"pre":"stock";$("#pfImg").value="";$("#pfVid").value="";$("#pfVidLink").value=(p.vid&&!isFileVideo(p.vid))?p.vid:"";
+  $("#pfTitle").textContent="Modifier le produit";$("#pfSave").textContent="Enregistrer les changements";$("#pfCancel").hidden=false;
+  $("#pfCur").textContent=(p.img?"Photo actuelle conservée sauf si vous en choisissez une autre. ":"")+(p.vid?"Vidéo actuelle conservée sauf changement.":"");
+  say("pfMsg","");fillSettingsForm();openDrawer("#adminDrawer",true);$("#pfName").focus();
+}
+$("#pfCancel").addEventListener("click",resetProductForm);
+$("#pfSave").addEventListener("click",function(){
+  var btn=this,name=$("#pfName").value.trim(),pr=$("#pfPrice").value.trim().replace(",","."),vl=$("#pfVidLink").value.trim();
+  if(!name){say("pfMsg","Donnez un nom au produit.","err");return}
+  var price=null;if(pr!==""){price=Number(pr);if(!isFinite(price)||price<0){say("pfMsg","Le prix n'est pas valide.","err");return}}
+  if(vl&&!urlOK(vl)){say("pfMsg","Le lien de la vidéo doit commencer par https://","err");return}
+  var row={col:"products",name:name,descr:$("#pfDesc").value.trim(),price:price,cat:$("#pfCat").value,avail:$("#pfAvail").value};
+  var fi=$("#pfImg").files&&$("#pfImg").files[0],fv=$("#pfVid").files&&$("#pfVid").files[0];
+  btn.disabled=true;say("pfMsg","Enregistrement…");
+  Promise.resolve().then(function(){return fi?putImage(fi).then(function(u){row.img_url=u}):0})
+  .then(function(){return fv?putVideo(fv).then(function(u){row.vid_url=u}):0})
+  .then(function(){if(!fv&&vl)row.vid_url=vl;})
+  .then(function(){
+    if(EDIT)return api("/rest/v1/items?id=eq."+encodeURIComponent(EDIT.id),{method:"PATCH",json:row,prefer:"return=minimal"});
+    return api("/rest/v1/items",{method:"POST",json:row,prefer:"return=minimal"});
+  }).then(function(){var was=!!EDIT;resetProductForm();say("pfMsg",was?"Produit modifié.":"Produit publié.","ok");return loadProducts()})
+  .catch(function(e){say("pfMsg",e&&e.message&&!e.status?e.message:(e&&e.status===401||e&&e.status===403?"Session expirée. Reconnectez-vous.":"L'enregistrement a échoué. Réessayez."),"err")})
+  .then(function(){btn.disabled=false});
+});
+function deleteProduct(id,btn){
+  if(pendingDel!==id){pendingDel=id;renderProducts();renderAdminList();return}
+  if(btn){btn.disabled=true;btn.textContent="Suppression…"}
+  api("/rest/v1/items?id=eq."+encodeURIComponent(id),{method:"DELETE"}).then(function(){pendingDel=null;if(EDIT&&EDIT.id===id)resetProductForm();delete cart[id];return loadProducts()})
+  .catch(function(){pendingDel=null;renderProducts();renderAdminList();say("pfMsg","La suppression a échoué. Reconnectez-vous puis réessayez.","err")});
+}
+function renderAdminList(){
+  var box=$("#alist");if(!box)return;
+  if(!IS_ADMIN){box.innerHTML="";return}
+  if(!PRODUCTS.length){box.innerHTML='<p class="empty">Aucun produit publié.</p>';return}
+  box.innerHTML=PRODUCTS.map(function(p){
+    return '<div class="arow"><div class="at">'+(imgOK(p.img)?'<img src="'+esc(p.img)+'" alt="">':PH_ICON)+'</div><div class="an"><b>'+esc(p.name)+'</b><span>'+(p.price==null?"Sur devis":money(p.price))+(p.pre?" · précommande":"")+'</span></div>'
+    +'<div class="ab"><button class="mini" type="button" data-edit="'+esc(p.id)+'">Modifier</button><button class="mini danger" type="button" data-del="'+esc(p.id)+'">'+(pendingDel===p.id?"Confirmer":"Supprimer")+'</button></div></div>';
+  }).join("");
+}
+function prodClick(e){
+  var ed=e.target.closest("button[data-edit]");if(ed){editProduct(ed.dataset.edit);return}
+  var dl=e.target.closest("button[data-del]");if(dl){deleteProduct(dl.dataset.del,dl)}
+}
+$("#products").addEventListener("click",prodClick);
+$("#alist").addEventListener("click",prodClick);
+
+/* publications : ajouter une photo ou une vidéo */
+$("#pSave").addEventListener("click",function(){
+  var btn=this,text=$("#pText").value.trim(),link=$("#pLink").value.trim();
+  var fi=$("#pFile").files&&$("#pFile").files[0],fv=$("#pVidFile").files&&$("#pVidFile").files[0];
+  if(!fi&&!fv&&!text&&!link){say("pMsg","Ajoutez une photo, une vidéo, une description ou un lien.","err");return}
+  if(link&&!urlOK(link)){say("pMsg","Le lien doit commencer par https://","err");return}
+  var row={col:"pub",cat:$("#pBlk").value,name:(text||"Publication").slice(0,80),descr:text};
+  btn.disabled=true;say("pMsg","Publication en cours…");
+  Promise.resolve().then(function(){return fi?putImage(fi).then(function(u){row.img_url=u}):0})
+  .then(function(){return fv?putVideo(fv).then(function(u){row.vid_url=u}):0})
+  .then(function(){if(!fv&&link)row.vid_url=link})
+  .then(function(){return api("/rest/v1/items",{method:"POST",json:row,prefer:"return=minimal"})})
+  .then(function(){$("#pText").value="";$("#pLink").value="";$("#pFile").value="";$("#pVidFile").value="";say("pMsg","Publié.","ok");return loadPosts()})
+  .catch(function(e){say("pMsg",e&&e.message&&!e.status?e.message:"La publication a échoué. Reconnectez-vous puis réessayez.","err")})
+  .then(function(){btn.disabled=false});
+});
+$("#sSave").addEventListener("click",function(){
+  var btn=this,tt=$("#sTt").value.trim(),fb=$("#sFb").value.trim();
+  var wl=$("#sWaLink").value.trim();
+  if((tt&&!urlOK(tt))||(fb&&!urlOK(fb))||(wl&&!urlOK(wl))){say("sMsg","Les liens doivent commencer par https://","err");return}
+  var rows=[{key:"site_whatsapp",value:$("#sWa").value.replace(/\D/g,"")},{key:"site_walink",value:wl},{key:"site_phone",value:$("#sPhone").value.trim()},{key:"site_tiktok",value:tt},{key:"site_facebook",value:fb}];
+  btn.disabled=true;say("sMsg","Enregistrement…");
+  api("/rest/v1/app_config",{method:"POST",json:rows,prefer:"resolution=merge-duplicates,return=minimal"})
+  .then(function(){S.whatsapp=rows[0].value;S.walink=wl||S.walink;S.phone=$("#sPhone").value.trim();S.tiktok=tt||S.tiktok;S.facebook=fb||S.facebook;renderContacts();say("sMsg","Enregistré. Le site est à jour.","ok")})
+  .catch(function(){say("sMsg","L'enregistrement a échoué. Reconnectez-vous puis réessayez.","err")}).then(function(){btn.disabled=false});
+});
+
+/* sans numéro, le lien WhatsApp ne transmet pas le texte : on le copie pour le coller dans la discussion */
+function copyForChat(getText,toastId){
+  if(waNum().length>=9)return;
+  var t=getText();try{navigator.clipboard.writeText(t);$(toastId).textContent="Commande copiée. Collez-la dans la discussion WhatsApp."}catch(e){}
+}
+$("#waSend").addEventListener("click",function(){copyForChat(orderText,"#toast")});
+$("#poSend").addEventListener("click",function(){copyForChat(poText,"#poToast")});
+
+/* theme */
+
+
+renderTabs();renderProducts();renderContacts();renderPosts();
+loadConfig();loadProducts();loadPosts();
+setInterval(function(){if(!document.hidden){loadProducts();loadPosts();loadConfig()}},60000);
+if(AUTH){checkAdmin().then(function(ok){if(ok)setAdmin(true);else{AUTH=null;saveAuth()}})}
+
+/* ===== v7 : blocs du bas ===== */
+(function(){
+  var VIEWS=["accueil","boutique","electronique","electricite","formation"];
+  var ALIAS={programmation:"electronique",publications:"electronique",precommande:"boutique",services:"accueil",contact:"accueil"};
+  var views=[].slice.call(document.querySelectorAll(".view")),btns=[].slice.call(document.querySelectorAll(".bnav button")),curV=null;
+  function show(v){
+    if(v===curV)return;curV=v;
+    views.forEach(function(el){el.classList.toggle("on",el.getAttribute("data-view")===v)});
+    btns.forEach(function(b){var on=b.getAttribute("data-v")===v;b.classList.toggle("on",on);if(on)b.setAttribute("aria-current","page");else b.removeAttribute("aria-current")});
+  }
+  function route(first){
+    var raw=decodeURIComponent((location.hash||"").replace("#","")),parts=raw.split(":"),h=parts[0],cat=parts[1],v=curV||"accueil",anchor=null;
+    if(VIEWS.indexOf(h)>=0)v=h;else if(ALIAS[h]){v=ALIAS[h];anchor=h}
+    var changed=v!==curV;show(v);
+    setTimeout(function(){
+      if(cat){var t=[].slice.call(document.querySelectorAll("#tabs .tab")).filter(function(x){return x.textContent.trim()===cat})[0];if(t)t.click()}
+      var el=anchor&&document.getElementById(anchor);
+      if(el&&el.offsetParent!==null){scrollTo({top:el.getBoundingClientRect().top+scrollY-70,behavior:first?"auto":"smooth"})}
+      else if(changed||h)scrollTo({top:0,behavior:"auto"});
+    },30);
+  }
+  btns.forEach(function(b){b.addEventListener("click",function(){var v=b.getAttribute("data-v");if(location.hash==="#"+v)route(false);else location.hash="#"+v})});
+  addEventListener("hashchange",function(){route(false)});
+  route(true);
+})();
+
+/* espace propriétaire : boutons Publier dans chaque bloc */
+(function(){
+  var bars=[].slice.call(document.querySelectorAll(".adminbar"));
+  var _sa=setAdmin;
+  setAdmin=function(on){_sa(on);bars.forEach(function(b){b.hidden=!IS_ADMIN});var t=$("#manageTop");if(t)t.classList.toggle("on",IS_ADMIN)};
+  $("#manageTop").addEventListener("click",function(){$("#manageBtn").click()});
+  document.addEventListener("click",function(e){
+    var b=e.target.closest("[data-pub]");
+    if(b){
+      var blk=b.getAttribute("data-pub");fillSettingsForm();openDrawer("#adminDrawer",true);
+      var tgt=blk==="product"?$("#pfTitle"):$("#pubTitle");
+      if(blk!=="product")$("#pBlk").value=blk;
+      setTimeout(function(){if(tgt)tgt.scrollIntoView({block:"start"})},350);
+      return;
+    }
+    var c=e.target.closest("[data-copypay]");
+    if(c){var n=PAYNUM,done=function(){c.textContent="Numéro copié";setTimeout(function(){c.textContent="Copier le numéro"},2000)};
+      try{navigator.clipboard.writeText(n).then(done,done)}catch(x){done()}}
+  });
+})();
+
+</script>
+</body></html>
